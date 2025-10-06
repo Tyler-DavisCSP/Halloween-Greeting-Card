@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Halloween Greeting Card - Inside</title>
+        <link rel="icon" type="image/x-icon" href="favicon (1).ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function popup_message() {
+                alert("Trick or treat?");
+            }
+        </script>
+        <style type="text/css">
+            * {
+                box-sizing: border-box;
+            }
+            .main {
+                background-color: #f58d42;
+                padding: 10px;
+                float: left;
+                width: 60%;
+            }
+            .right {
+                background-color: #f58d42;
+                padding: 10px;
+                float: left;
+                width: 40%;
+            }
+            .txtbox {
+                border: 4px dotted black;
+                padding: 10px;
+            }
+            .container {
+                position: relative;
+                width: 50%
+            }
+            .image {
+                display: block;
+                width: 100%;
+            }
+            .overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                transition: 0.5s ease;
+                background-color: black;
+            }
+            .container:hover .overlay {
+                opacity: 1;
+            }
+            .text {
+                color: white;
+                font-size: 12px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                text-align: center;
+            }
+            body {
+                background-image: url('cobweb.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100% 100%;
+                margin-left: 10%;
+                margin-right: 10%;
+                padding: 16px 16px 16px 16px;
+                font-family: sans-serif;
+            }
+            h1 {
+                color: brown;
+            }
+            h2 {
+                color: brown;
+            }
+            p {
+                color: black;
+            }
+            button:hover {
+                background-color: black;
+                color: orange;
+            }
+            @media screen and (max-width: 800px) {
+                .main, .right {
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body onload="popup_message()">
+        <div class="main">
+            <div class="txtbox">
+                <h1>A Treat for You!</h1>
+                <h2>Calling All Trick or Treaters!</h2>
+                <p>Greetings all ghosts and ghouls! As Halloween rolls right around the corner, we hope to see you participating in its many wonderous festivities! Hover your mouse over the images below to learn more about fun times you could be having this October!</p>
+                <br>
+                <div class="container">
+                    <img src="download (17).jpeg" alt="Trick or Treat" class="image">
+                    <div class="overlay">
+                        <div class="text">The kids in this image are trick-or-treating, an event where they go from door to door on Halloween (October 31st) asking for candy, exclaiming the phrase: "trick-or-treat!"
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="container">
+                    <img src="halloween-movie-night-template.jpeg.jpg" alt="Halloween Movie Night" class="image">
+                    <div class="overlay">
+                        <div class="text">Enjoy family fun with a Halloween movie night! Choose a Halloween appropriate film from scary horror movies, thrillers, or other fun family-friendly options. Enhance your experience with a variety of snacks, candy, and decorations to create a festive atmosphere.
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="container">
+                    <img src="frightfarm-haunted-attraction.jpg" alt="Fright Farm Haunted House" class="image">
+                    <div class="overlay">
+                        <div class="text">Put your courage and bravery up to the test by navigating through a haunted house! Depicted in the image, Fright Farm in Smithfield, PA offers numerous Halloween themed attractions like haunted mazs, hayrides, live entertainment, festival foods, games, and other fun activities.
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="container">
+                    <img src="download (18).jpeg" alt="Carved Pumpkins" class="image">
+                    <div class="overlay">
+                        <div class="text">Carve and paint a pumpkin! The pumpkins like you seen in the image can be carved with your own custom designs and painted to add a pop of color. They also make great decorations on your front porch to display for people passing by.
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <h2>Learn About the History of Halloween:</h2>
+                <iframe width="460" height="315" src="https://www.youtube.com/embed/L_eAKG1paUk?si=EeElqguqnbqgkIOC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="right">
+            <div class="txtbox">
+                <h2>Top 10 Most Popular Kids Halloween Costumes for 2025:</h2>
+                <ol>
+                    <li>Spider-Man</li>
+                    <li>Princess</li>
+                    <li>Witch</li>
+                    <li>Ghost</li>
+                    <li>Superhero</li>
+                    <li>Batman</li>
+                    <li>Superman</li>
+                    <li>Wednesday Adams</li>
+                    <li>KPop Demon Hunters</li>
+                    <li>Vampire</li>
+                </ol>
+                <h2>Click the play button for some spooky background music!</h2>
+                <audio controls autoplay loop>
+                    <source src="halloween-music-400868.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+    </body>
+</html>
